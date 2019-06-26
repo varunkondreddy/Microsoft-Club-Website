@@ -34,7 +34,7 @@ section .leftBox .content
 
 section .leftBox .content:hover
 {
-  background: #e91e63
+  background: #ffaf40;
 }
 
 section .leftBox .content h1
@@ -95,7 +95,7 @@ section .events ul li .time
 
 section .events ul li:hover .time
 {
-  background: #e91e63;
+  background: #ffaf40;
 }
 
 section .events ul li .time h2
@@ -160,9 +160,9 @@ section .events ul li .details a
 
 section .events ul li .details a:hover
 {
-  background: #e91e63;
+  background: #ffaf40;
   color: #fff;
-  border-color: #e91e63;
+  border-color: #ffaf40;
 }
 
 @media (max-width: 991px)
