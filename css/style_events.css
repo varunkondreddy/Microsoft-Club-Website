@@ -73,7 +73,7 @@
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     transform: translateY(-100px);
@@ -86,7 +86,7 @@
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     transform: translateY(-100px);
@@ -99,7 +99,7 @@
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     transform: translateY(-100px);
@@ -112,7 +112,7 @@
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     transform: translateY(-100px);
@@ -136,7 +136,7 @@
     background: #fff;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     transform: translateY(0);
@@ -148,7 +148,7 @@
     background: #fff;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     transform: translateY(0);
@@ -160,7 +160,7 @@
     background: #fff;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     transform: translateY(0);
@@ -197,7 +197,7 @@ body {
 
 .m-2 {
   margin: 2px;
-  
+
 }
 
 section {
@@ -425,6 +425,9 @@ section .events ul li .details a:hover {
 }
 
 /* Buttons */
+#btn{
+  vertical-align: bottom;
+}
 .login-btn {
   background-color: #00BFFF;
   padding: 0 45px;
