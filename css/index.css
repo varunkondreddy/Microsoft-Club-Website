@@ -1,12 +1,4 @@
-
-
 #creek{
-	height: 500px;
+	min-height: 300px;
 	cursor: pointer;
 }
-
-.card-content{
-	
-}
-
-

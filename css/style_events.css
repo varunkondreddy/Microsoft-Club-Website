@@ -3,6 +3,7 @@
 #card1 {
 	width: 100%;
 	height: 210px;
+	cursor: pointer;
 }
 #mcard {
 	margin: 10px;
