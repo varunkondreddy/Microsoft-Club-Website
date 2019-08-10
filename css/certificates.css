@@ -30,3 +30,6 @@ input{
 #errorlink, #datalink, .progress{
     visibility: hidden;
 }
+.col{
+  margin-top:1rem;
+}
