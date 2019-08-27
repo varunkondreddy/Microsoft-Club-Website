@@ -52,7 +52,6 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"
           style="color: black">menu</i></a>
       <ul class="right hide-on-med-and-down">
-
         <li><a class="black-text" href="index.html">Home</a></li>
         <li class="active teal lighten-3"><a class="black-text" href="events.html">Events</a></li>
         <li><a class="black-text" href="gallery.html">Gallery</a></li>
@@ -71,33 +70,34 @@
   </ul>
   <!--container starts here-->
   <div class="container">
-    <!-- current events -->
     <div class="row" style="margin-top: 25px">
       <div class="header">
-        <h1>Events</h1>
+        <h1 class="center-align">Events</h1>
       </div>
-      <div class="container" style="width: 100%;">
-        <div class="center-align">
-          <div class="card">
-            <div class="card-image" style="width:100%; height: 300px;">
-              <iframe height="100%"
-                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMSTCSRM%2Fvideos%2F380088472700083%2F&show_text=0"
-                frameborder="0" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"
-                style="width: 100%"></iframe>
+      <!-- 2*2 cards -->
+      <div class="row">
+        <!-- codestruck -->
+        <div class="col s12 m6 offset-m3">
+          <div id="mcard">
+            <div class="face face1" id="5" onclick="expand(id)">
+              <div class="card horizontal small" id="card1">
+                <div class="card-content center-block">
+                  <span class="card-title" style="margin-top: 40%;">CodeStruck 1.0</span>
+                </div>
+              </div>
             </div>
-            <div class="card-content" style="max-height: 400px;">
-              <span class="card-title activator grey-text text-darken-4">MSTC Competitive Coding Event</span>
-              <p class="center-align"><b>17<sup>th</sup> & 18<sup>th</sup> August, 2019</b></p>
-              <div class="center-align">
-                <a class="btn-large white black-text" href="http://bit.ly/mstccs2019"
-                  style="margin-top: 8px; font-size: 1rem;">Accept the challenge here!</a></div>
+            <div class="face face6" id="5x">
+              <p class="m-2"><b>17-18<sup>th</sup> &amp; 25<sup>th</sup> August, 2019</b></p>
+              <p class="m-2">The first edition of CodeStruck saw a footfall of 1000+ students. Certificates for those who made it to the 2nd round will be made available soon. </p>
+              <input type="button" value="Images" class="login-btn color5" style="position: absolute; bottom: 55px;"
+              onclick="window.location.href = 'gallery.html'">
+              <input type="button" value="Certificates" class="login-btn color5" style="position: absolute; bottom: 55px; right: 3.5%; padding: 0px 32px;"
+              onclick="window.location.href = '#!'">
             </div>
           </div>
         </div>
-
       </div>
-      <!-- 2*2 cards -->
-      <div class="row" style="margin-top: 20px">
+      <div class="row">
         <div class="col s12 m6">
           <div id="mcard">
             <div class="face face1" id="1" onclick="expand(id)">
@@ -176,8 +176,8 @@
         </div>
       </div>
     </div>
-
   </div>
+
   <!-- footer starts -->
 
   <footer class="page-footer">
@@ -213,7 +213,7 @@
 
   <!-- Footer ends-->
   <!--scripts-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/events.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
