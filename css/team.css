@@ -164,3 +164,13 @@
 	padding: 15px !important;
 	border-radius: 4px;
 }
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+	margin-right: 12px;
+}
+.card .card-content .card-title {
+	margin-bottom: 0;
+	line-height: 10px;
+}
+.card .card-content {
+	padding: 10px 0 20px 0;
+}

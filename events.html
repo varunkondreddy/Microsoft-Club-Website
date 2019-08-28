@@ -13,10 +13,11 @@
     gtag('config', 'UA-130200243-3');
   </script>
 
-
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
     content="See all the events that we have done and even those that we plan to do in the future.">
+  <link rel='shortcut icon' href='favicon.png' type='image/x-icon' />
 
 
   <title>
@@ -51,7 +52,6 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"
           style="color: black">menu</i></a>
       <ul class="right hide-on-med-and-down">
-
         <li><a class="black-text" href="index.html">Home</a></li>
         <li class="active teal lighten-3"><a class="black-text" href="events.html">Events</a></li>
         <li><a class="black-text" href="gallery.html">Gallery</a></li>
@@ -70,37 +70,40 @@
   </ul>
   <!--container starts here-->
   <div class="container">
-    <!-- current events -->
     <div class="row" style="margin-top: 25px">
       <div class="header">
-        <h1>Events</h1>
+        <h1 class="center-align">Events</h1>
       </div>
-      <div class="container" style="width: 100%;">
-        <div class="center-align">
-          <div class="card" style= "border-radius: 10px;">
-            <div class="card-image" style="max-height: 450px; height: 500px;">
-              <iframe height="100%" src="https://www.youtube.com/embed/lVPsSizVmj0?rel=0&amp;showinfo=0" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                style="width: 100%; border-radius: 10px;"></iframe>
+      <!-- 2*2 cards -->
+      <div class="row">
+        <!-- codestruck -->
+        <div class="col s12 m6 offset-m3">
+          <div id="mcard">
+            <div class="face face1" id="5" onclick="expand(id)">
+              <div class="card horizontal small" id="card1">
+                <div class="card-content center-block">
+                  <span class="card-title" style="margin-top: 40%;">CodeStruck 1.0</span>
+                </div>
+              </div>
             </div>
-            <div class="card-content" style="max-height: 400px;">
-              <span class="card-title activator grey-text text-darken-4">MSTC Competitive Coding Event</span>
-              <p class="center-align"><b>17<sup>th</sup> & 18<sup>th</sup> August, 2019</b></p>
-              <div class="center-align">
-                <a class="btn-large white black-text disabled" href="#"
-                  style="margin-top: 8px; font-size: 2.5vw">Registrations Opening Soon</a></div>
+            <div class="face face6" id="5x">
+              <p class="m-2"><b>17-18<sup>th</sup> &amp; 25<sup>th</sup> August, 2019</b></p>
+              <p class="m-2">The first edition of CodeStruck saw a footfall of 1000+ students. Certificates for those who made it to the 2nd round will be made available soon. </p>
+              <input type="button" value="Images" class="login-btn color5" style="position: absolute; bottom: 55px;"
+              onclick="window.location.href = 'gallery.html'">
+              <input type="button" value="Certificates" class="login-btn color5" style="position: absolute; bottom: 55px; right: 3.5%; padding: 0px 32px;"
+              onclick="window.location.href = '#!'">
             </div>
           </div>
         </div>
       </div>
-      <!-- 2*2 cards -->
-      <div class="row" style="margin-top: 20px">
+      <div class="row">
         <div class="col s12 m6">
           <div id="mcard">
-            <div class="face face1" id="event1">
-              <div class="card horizontal small" id="card1" >
-                <div class="card-content center-block">
-                  <div class="card-title" style="margin-top: 15%; text-align: center;">Data Science and Machine Learning Basics</div>
+            <div class="face face1" id="1" onclick="expand(id)">
+              <div class="card horizontal small" id="card1">
+                <div class="card-content valign-wrapper center-align">
+                  <div class="card-title center-align">Data Science and Machine Learning Basics</div>
                 </div>
               </div>
             </div>
@@ -109,25 +112,27 @@
               <div>
                 <p class="m-2" style="max-height:130px">Data Science and ML are two intertwined topics that have really
                   caught the imagination of tech enthusiasts.</p>
-                <input id="btn" type="button" value="Images" class="login-btn color3" style="position: absolute; bottom: 50px" onclick="window.location.href = 'gallery.html'" >
+                <input id="btn" type="button" value="Images" class="login-btn color3"
+                  style="position: absolute; bottom: 50px" onclick="window.location.href = 'gallery.html'">
               </div>
             </div>
           </div>
         </div>
         <div class="col s12 m6">
           <div id="mcard">
-            <div class="face face1" id="event2">
-              <div class="card horizontal small" id="card1" >
-                <div class="card-content center-block ">
-                  <div class="card-title" style="margin-top: 17%; text-align: center;">Interactive Coding Learning Workshop</div>
+            <div class="face face1" id="2" onclick="expand(id)">
+              <div class="card horizontal small" id="card1">
+                <div class="card-content valign-wrapper center-align">
+                  <div class="card-title center-align">Interactive Coding Learning Workshop</div>
                 </div>
               </div>
             </div>
             <div class="face face3" id="event2x">
               <p class="m-2"><b>06<sup>th</sup> October, 2018</b></p>
-              <p class="m-2" >Join us to kick-start your dev journey from scratch to pro. Every participant will be
+              <p class="m-2">Join us to kick-start your dev journey from scratch to pro. Every participant will be
                 provided with a subscription to enable them to learn even after the workshop.</p>
-              <input type="button" value="Images" class="login-btn color4" style="position: absolute; bottom: 50px" onclick="window.location.href = 'gallery.html'">
+              <input type="button" value="Images" class="login-btn color4" style="position: absolute; bottom: 50px"
+                onclick="window.location.href = 'gallery.html'">
             </div>
           </div>
         </div>
@@ -135,8 +140,8 @@
         <div class="row">
           <div class="col s12 m6">
             <div id="mcard">
-              <div class="face face1" id="event3">
-                <div class="card horizontal small" id="card1" >
+              <div class="face face1" id="3" onclick="expand(id)">
+                <div class="card horizontal small" id="card1">
                   <div class="card-content center-block">
                     <span class="card-title" style="margin-top: 40%;">MSI Campus Meet</span>
                   </div>
@@ -146,69 +151,63 @@
                 <p class="m-2"><b>09<sup>th</sup> September, 2017</b></p>
                 <p class="m-2">Microsoft Club, SRM University hosts MSI Gaming on 9th September at MBA Seminar Hall from
                   11 AM to 3 PM.</p>
-                <input type="button" value="Images" class="login-btn color1" style="position: absolute; bottom: 50px" onclick="window.location.href = 'gallery.html'">
+                <input type="button" value="Images" class="login-btn color1" style="position: absolute; bottom: 50px"
+                  onclick="window.location.href = 'gallery.html'">
               </div>
             </div>
           </div>
           <div class="col s12 m6">
             <div id="mcard">
-              <div class="face face1" id="event4">
-                <div class="card horizontal small" id="card1" >
+              <div class="face face1" id="4" onclick="expand(id)">
+                <div class="card horizontal small" id="card1">
                   <div class="card-content center-block">
-                    <div class="card-title" style = "margin-top: 50%;">Imagine Talks</div>
+                    <div class="card-title" style="margin-top: 50%;">Imagine Talks</div>
                   </div>
                 </div>
               </div>
               <div class="face face5" id="event4x">
                 <p class="m-2"><b>02<sup>nd</sup> September, 2017</b></p>
                 <p class="m-2"></p>
-                <input type="button" value="Images" class="login-btn color2" style="position: absolute; bottom: 50px" onclick="window.location.href = 'gallery.html'">
+                <input type="button" value="Images" class="login-btn color2" style="position: absolute; bottom: 50px"
+                  onclick="window.location.href = 'gallery.html'">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
-  <footer class="page-footer green lighten-4">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="green-text text-darken-3">Reach out to us</h5>
-          <p class="green-text text-darken-3">Campus WiFi might not work all the time, but Azure does. Feel free to
-            reach out to us through whatever means you see fit.<br>We are always online.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="green-text text-darken-3">Connect:</h5>
-          <ul>
-            <li><a class="green-text text-darken-3" target="_blank" href="mailto:hello@MicrosoftClubSRM.com">
-                <img src="img/mail.png" height="33px">&nbsp Mail</a>
-            </li>
-            <li><a class="green-text text-darken-3" target="_blank" href="https://www.facebook.com/MSTCsrm">
-                <img src="img/fb.png" height="33px">&nbsp Facebook</a>
-            </li>
-            <li><a class="green-text text-darken-3" target="_blank" href="https://www.instagram.com/MSTCsrm/">
-                <img src="img/ig.png" height="33px">&nbsp Instagram</a>
-            </li>
-            <li><a class="green-text text-darken-3" target="_blank" href="https://www.linkedin.com/company/mstc-srm/">
-                <img src="img/linkedin.png" height="33px">&nbsp LinkedIn</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright center black-text" style="outline: 10px">
-      <div class="container">
-        &#169; 2019 <br><small> Developed by the Web Devs at MSTC</small>
 
+  <!-- footer starts -->
+
+  <footer class="page-footer">
+    <div class="container center-align">
+      <p>Campus WiFi might not work all the time, but Azure does. Feel free to reach out to us through whatever means
+        you see fit.</p>
+      <p>Reach out to us!</p>
+      <a href="mailto:hello@MicrosoftClubSRM.com" class="tooltipped" data-position="top" data-tooltip="Mail"><img
+          src="img/envelope.svg" alt="mail"></a>
+      <img src="img/minus-horizontal-straight-line.svg">
+      <a href="https://www.facebook.com/MSTCSRM/" class="tooltipped" data-position="top" data-tooltip="Facebook"><img
+          src="img/facebook.svg" alt="fb"></a>
+      <img src="img/minus-horizontal-straight-line.svg">
+      <a href="https://www.instagram.com/MSTCsrm/" class="tooltipped" data-position="top" data-tooltip="Instagram"><img
+          src="img/instagram.svg" alt="instagram"></a>
+      <img src="img/minus-horizontal-straight-line.svg">
+      <a href="https://www.linkedin.com/company/mstc-srm/" class="tooltipped" data-position="top"
+        data-tooltip="LinkedIn"><img src="img/linkedin.svg" alt="linkedin"></a>
+    </div>
+    <div class="footer-copyright center-align grey darken-3">
+      <div class="container">
+        &copy; 2019 Copyright<br />
+        <span>Developed by the Web Devs at MSTC</span>
       </div>
     </div>
   </footer>
   <!-- Footer ends-->
   <!--scripts-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/java.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/events.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
@@ -218,6 +217,11 @@
   <script>
     $(document).ready(function () {
       $('.modal').modal();
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.tooltipped').tooltip();
     });
   </script>
 </body>

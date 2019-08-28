@@ -3,6 +3,11 @@ html {
 }
 body {
 	font-family: Calibri;
+	display: flex;
+	flex-direction: column;
+}
+.m-b-0 {
+	margin-bottom: 0;
 }
 .card-action {
 	font-size: 20px;
@@ -21,18 +26,11 @@ body {
 .card:hover {
 	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
 }
-
-body {
-	display: flex;
-	flex-direction: column;
-}
-
 main {
 	flex: 1 0 auto;
 }
 
-h1.title,
-.footer-copyright a {
+h1.title {
 	text-transform: uppercase;
 	font-weight: 900;
 }
@@ -211,3 +209,17 @@ main {
 .four h2 {
 	border-bottom: 2px solid black;
 }
+
+/* footer starts */
+.page-footer,
+.page-footer .footer-copyright {
+	background-color: #000;
+	color: #fff;
+}
+.page-footer img {
+	height: 36px;
+	width: 36px;
+	margin: 1.5px;
+}
+
+/* footer ends */
