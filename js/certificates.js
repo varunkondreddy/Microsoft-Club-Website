@@ -20,17 +20,16 @@ function dod() {
     document.getElementById("progress").style.visibility='visible';
     var storageRef = storage.ref();
     var regno = document.getElementById('regid').value;
-    if(regno.length !=15){
+    if(regno.length <5){
         console.log(regno.length);
         document.getElementById("datalink").innerHTML = "";
         document.getElementById("datalink").style.visibility='hidden';
-        document.getElementById("errorlink").innerHTML="Please enter your complete register number";
+        document.getElementById("errorlink").innerHTML="Please enter your email correctly";
         document.getElementById("errorlink").style.visibility='visible';
         document.getElementById("progress").style.visibility='hidden';
         return;
-
     }
-    var filepath = 'competitive-coding//' + regno + '.jpg';
+    var filepath = 'competitive-coding//' + regno + '.pdf';
     var pathReference = storage.ref(filepath);
 
     storageRef.child(filepath).getDownloadURL().then(function (url) {
@@ -43,7 +42,7 @@ function dod() {
     }).catch(function (error) {
         document.getElementById("datalink").innerHTML = "";
         document.getElementById("datalink").style.visibility='hidden';
-        document.getElementById("errorlink").innerHTML="There was no certificate with this register number, please try again.";
+        document.getElementById("errorlink").innerHTML="There was no certificate with this email id, please try again.";
         document.getElementById("errorlink").style.visibility='visible';
         document.getElementById("progress").style.visibility='hidden';
         console.log("OOPS!");
