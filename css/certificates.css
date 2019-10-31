@@ -1,5 +1,11 @@
-body{
- font-family:Calibri;
+html,body {
+  height: 100%; 
+  font-family:Calibri;
+}
+.container{
+  min-height:100%;
+  margin-bottom: -400px;
+  padding-bottom: 200px;
 }
 
 input{
@@ -20,8 +26,9 @@ input{
 }
 
 .page-footer{
-    position: absolute;
+    position:fixed;
     width: 100%;
+    left: 0;
     bottom: 0;
 }
 #errorlink{
